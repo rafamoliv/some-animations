@@ -62,19 +62,9 @@
 /* Parte 2 */
 
 .img-slide-2 {
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
+  margin-top: 150px;
   background-color: #f3f3f3;
-}
-
-@keyframes pc-animation {
-  from {
-    transform: rotateX(90deg);
-  }
-
-  to {
-    transform: rotateX(0deg);
-  }
 }
 
 .img-perspective {
@@ -109,7 +99,45 @@
   right: 400px;
 }
 
+.ladyComputer {
+  height: 242px;
+  position: absolute;
+  top: -137px;
+  right: 475px;
+  animation: ladyPC-animation 2s forwards ease-in-out;
+}
+
+@keyframes pc-animation {
+  from {
+    transform: rotateX(90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes ladyPC-animation {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+/* Parte 3 */
+
 .button-text {
+  margin-bottom: 50px;
   padding: 10px 30px 10px 30px;
   background: #5974c7;
   color: #f3f3f3;
