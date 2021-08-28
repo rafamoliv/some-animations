@@ -6,6 +6,12 @@ import pc from './assets/computer.png'
 import lady from './assets/lady.png'
 import gentleman from './assets/gentleman.png'
 import ladyComputer from './assets/lady_computer.png'
+import cacto from './assets/cacto.png'
+import cotonete from './assets/cotonete.png'
+import pedra from './assets/pedra.png'
+import pontinho from './assets/pontinho.png'
+import pontinhoAmarelo from './assets/pontinhoAmarelo.png'
+import folha from './assets/folha.png'
 
 function Animations() {
     return (
@@ -18,9 +24,13 @@ function Animations() {
                         <img src={pc} className="pc" />
                         <img src={lady} className="lady" />
                         <img src={gentleman} className="gentleman" />
-                    </div>
-                    <div className="overlowPC">
                         <img src={ladyComputer} className="ladyComputer" />
+                        <img src={cacto} className="cacto" />
+                        <img src={cotonete} className="cotonete" />
+                        <img src={pedra} className="pedra" />
+                        <img src={pontinho} className="pontinho" />
+                        <img src={pontinhoAmarelo} className="pontinhoAmarelo" />
+                        <img src={folha} className="folha" />
                     </div>
                 </div>
             </div>

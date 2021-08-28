@@ -2,6 +2,8 @@
 
 .container {
   margin-bottom: 200px;
+  width: 100%;
+  height: 50%;
 }
 
 .img-container {
@@ -35,6 +37,7 @@
   width: 200px;
   height: 200px;
   animation: qd-animation 4s infinite;
+  animation-delay: 0.5s;
 }
 
 @keyframes qd-animation {
@@ -60,9 +63,8 @@
 }
 
 /* Parte 2 */
-
 .img-slide-2 {
-  margin-bottom: 200px;
+  margin-bottom: 700px;
   margin-top: 150px;
   background-color: #f3f3f3;
 }
@@ -76,20 +78,23 @@
 .pc,
 .lady,
 .gentleman {
-  z-index: 5;
+  z-index: 9;
   animation: pc-animation 2s;
   transform-style: preserve-3d;
 }
 
 .pc {
   width: 576px;
+  position: absolute;
+  top: 0px;
+  right: 400px;
 }
 
 .lady {
   height: 294px;
   position: absolute;
   top: 150px;
-  left: 350px;
+  right: 825px;
 }
 
 .gentleman {
@@ -100,11 +105,70 @@
 }
 
 .ladyComputer {
+  z-index: 9;
   height: 242px;
   position: absolute;
   top: -137px;
   right: 475px;
   animation: ladyPC-animation 2s forwards ease-in-out;
+}
+
+.cotonete,
+.pedra,
+.cacto,
+.pontinho,
+.folha,
+.pontinhoAmarelo {
+  z-index: 8;
+  position: absolute;
+}
+
+.cotonete,
+.pedra,
+.pontinhoAmarelo {
+  animation: left-img-animation 3s forwards ease-in-out;
+}
+
+.cacto,
+.pontinho,
+.folha {
+  animation: right-img-animation 3s forwards ease-in-out;
+}
+
+.cotonete {
+  height: 330px;
+  top: -15px;
+  right: 845px;
+}
+
+.pedra {
+  height: 150px;
+  top: 235px;
+  right: 800px;
+}
+
+.pontinhoAmarelo {
+  height: 100px;
+  top: 270px;
+  right: 850px;
+}
+
+.folha {
+  height: 300px;
+  top: -50px;
+  right: 350px;
+}
+
+.cacto {
+  height: 100px;
+  top: 175px;
+  right: 450px;
+}
+
+.pontinho {
+  height: 100px;
+  top: 175px;
+  right: 400px;
 }
 
 @keyframes pc-animation {
@@ -125,6 +189,40 @@
 
   50% {
     transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes left-img-animation {
+  0% {
+    transform: translateX(+25px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(+25px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes right-img-animation {
+  0% {
+    transform: translateX(-25px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-25px);
     opacity: 0;
   }
 
