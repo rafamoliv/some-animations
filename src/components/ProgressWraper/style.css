@@ -1,0 +1,32 @@
+.progressMainWrapper,
+.progressMainStyle {
+  height: 4px;
+}
+
+.progressMainWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+}
+
+.progressMainStyle {
+  background-color: gold;
+}
+
+.circular {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+
+  padding: 2px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.MuiCircularProgress-colorPrimary {
+  color: gold !important;
+}
