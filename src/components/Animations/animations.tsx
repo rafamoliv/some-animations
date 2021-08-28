@@ -21,16 +21,16 @@ function Animations() {
             <div className="img-slide-2">
                 <div className="img-perspective">
                     <div className="pc-section">
-                        <img src={pc} className="pc" />
-                        <img src={lady} className="lady" />
-                        <img src={gentleman} className="gentleman" />
-                        <img src={ladyComputer} className="ladyComputer" />
-                        <img src={cacto} className="cacto" />
-                        <img src={cotonete} className="cotonete" />
-                        <img src={pedra} className="pedra" />
-                        <img src={pontinho} className="pontinho" />
-                        <img src={pontinhoAmarelo} className="pontinhoAmarelo" />
-                        <img src={folha} className="folha" />
+                        <img src={pc} className="pc" alt="pc" />
+                        <img src={lady} className="lady" alt="lady" />
+                        <img src={gentleman} className="gentleman" alt="gentleman" />
+                        <img src={ladyComputer} className="ladyComputer" alt="lady computer" />
+                        <img src={cacto} className="cacto" alt="cacto" />
+                        <img src={cotonete} className="cotonete" alt="cotonete" />
+                        <img src={pedra} className="pedra" alt="pedra" />
+                        <img src={pontinho} className="pontinho" alt="pontinho" />
+                        <img src={pontinhoAmarelo} className="pontinhoAmarelo" alt="pontinho amarelo" />
+                        <img src={folha} className="folha" alt="folha" />
                     </div>
                 </div>
             </div>
@@ -42,9 +42,9 @@ function Animations() {
             <div className="img-container">
                 <div className="containerFlip">
                     <div className="flipper">
-                        <img src={mapa} className="mapaQuadrado" />
+                        <img src={mapa} className="mapaQuadrado" alt="mapa quadrado" />
                     </div>
-                    <img src={foguete} className="fogueteACCT" />
+                    <img src={foguete} className="fogueteACCT" alt="foguete ACCT" />
                 </div>
             </div>
 
