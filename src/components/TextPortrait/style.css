@@ -1,0 +1,25 @@
+.background {
+  background: #000;
+  width: 600px;
+  margin: auto;
+}
+
+.textPortrait {
+  background: url(https://images.unsplash.com/photo-1568044852337-9bcc3378fc3c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80)
+    no-repeat center;
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  border: 1rem dashed #333;
+  padding: 2rem;
+  width: 500px;
+  margin: auto;
+
+  color: transparent;
+  transition: 350ms all ease-in-out;
+}
+
+.textPortrait:hover {
+  color: #fff;
+}
