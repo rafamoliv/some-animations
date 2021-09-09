@@ -3,3 +3,4 @@
 - Progress Bar
 - Progress Wraper
 - Keyframes
+- Text Portrait
